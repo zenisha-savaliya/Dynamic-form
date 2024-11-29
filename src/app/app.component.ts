@@ -9,7 +9,7 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AsyncPipe, DynamicFormComponent],
+  imports: [AsyncPipe, DynamicFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
