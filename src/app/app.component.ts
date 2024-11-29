@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Observable } from 'rxjs';
 import { QuestionBase } from './question-base';
 import { QuestionService } from './question.service';
