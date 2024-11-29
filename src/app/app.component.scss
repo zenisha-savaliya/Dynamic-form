@@ -1,0 +1,25 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$bg-color: pink;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.div-style{
+    background-color: $bg-color;
+    border: 1px solid $primary-color;
+    margin: 50px;
+    padding: 50px;
+}
+
+.div-style h2{
+    margin-left: 500px;
+}
+
+.form-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
