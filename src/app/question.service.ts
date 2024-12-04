@@ -50,6 +50,7 @@ export class QuestionService {
         order: 4,
       }),
     ];
-    return of(questions.sort((a, b) => a.order - b.order));
+    const sortedQuestions = questions.sort((a, b) => a.order - b.order);
+    return of(sortedQuestions);
   }
 }

@@ -1,0 +1,6 @@
+projectKey=Dynamic-form
+serverUrl=http://localhost:9099
+serverVersion=24.12.0.100206
+dashboardUrl=http://localhost:9099/dashboard?id=Dynamic-form
+ceTaskId=fee00da7-7f31-4c8a-82cd-e2afb2fd4eb7
+ceTaskUrl=http://localhost:9099/api/ce/task?id=fee00da7-7f31-4c8a-82cd-e2afb2fd4eb7

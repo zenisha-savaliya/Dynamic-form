@@ -10,8 +10,8 @@ export class QuestionControlService {
     const group: any = {};
     questions.forEach((question) => {
       group[question.key] = question.required
-        ? new FormControl(question.value || '', Validators.required)
-        : new FormControl(question.value || '');
+        ? new FormControl(question.value ?? '', Validators.required)
+        : new FormControl(question.value ?? '');
     });
     return new FormGroup(group);
   }

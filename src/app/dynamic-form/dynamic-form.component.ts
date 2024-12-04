@@ -2,9 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { DynamicFormQuestionComponent } from '../dynamic-form-question/dynamic-form-question.component';
-import { QuestionControlService } from '../question-control.service';
 import { QuestionBase } from '../question-base';
-import { AppComponent } from '../app.component';
+import { QuestionControlService } from '../question-control.service';
 
 @Component({
   selector: 'app-dynamic-form',
@@ -18,7 +17,7 @@ export class DynamicFormComponent implements OnInit {
   @Input() questions: QuestionBase<string>[] | null = [];
   form!: FormGroup;
   payLoad = '';
-  constructor(private qcs: QuestionControlService) {}
+  constructor(private readonly qcs: QuestionControlService) {}
   ngOnInit() {
     this.form = this.qcs.toFormGroup(this.questions as QuestionBase<string>[]);
   }
